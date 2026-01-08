@@ -41,8 +41,6 @@ function findMax(input) {
 console.log(findMax([5, 11, 9, 3]));
 
 
-
-
 // Problem 5: Remove Duplicates from an Array
 function removeDuplicates(arr) {
   let newArr = [];
@@ -54,7 +52,6 @@ function removeDuplicates(arr) {
   return newArr;
 }
 console.log(removeDuplicates([1, 2, 2, 3, 4, 4]));
-
 
 
 // Problem 6: Sum of All Numbers in an Array
@@ -87,7 +84,6 @@ function capitalizeWords(input) {
     .split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
   return result;
 }
-
 console.log(capitalizeWords("hello world"));
 
 
@@ -113,6 +109,7 @@ function pingPong() {
     else if (i % 5 === 0) output.push("Pong");
     else output.push(i);
   }
-  console.log(output.join(', '));
+  return output.join(', ');
+
 }
-pingPong();
+console.log(pingPong());
